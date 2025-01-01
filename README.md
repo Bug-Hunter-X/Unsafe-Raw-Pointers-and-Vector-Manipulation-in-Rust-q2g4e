@@ -1,0 +1,3 @@
+# Unsafe Raw Pointers and Vector Manipulation in Rust
+
+This repository demonstrates a potential issue in Rust when dealing with raw pointers and vectors. The code in `bug.rs` modifies a vector's value using a raw pointer after the vector has gone out of scope, this can lead to undefined behavior, crashes, and memory corruption. The solution in `bugSolution.rs` provides a safer alternative, avoiding raw pointer manipulation completely. This example highlights the significance of careful memory management in unsafe Rust code, and the benefits of using safer Rust approaches whenever possible.
